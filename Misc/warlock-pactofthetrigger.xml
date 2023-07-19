@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pact Boon: Pact of the Trigger</name>
+		<description>Pact of the Trigger Pact Boon for Warlocks.</description>
+		<author url="https://www.monkeydm.com/">MonkeyDM</author>
+		<update version="0.1.0">
+			<file name="warlock-pactofthetrigger.xml" url="" />
+		</update>
+	</info>
+
+<element name="Pact of the Trigger" type="Class Feature" source="MonkeyDM" id="ID_MDM_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TRIGGER">
+	<supports>Pact Boon</supports>
+		<description>
+			<p>You can use your action to create a hex gun in your empty hand. You can choose the form that this ranged weapon takes each time you create it. It can be either a Sniper or a Revolver (detailed below).
+            This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">Your hex gun disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required),
+            or if you die.</p>
+			<p class="indent">You are proficient with your hex gun and you can channel cantrips through it as bullets, using it as an arcane focus. If you do so, instead of increasing the damage of the cantrip when
+            you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast), the cantrip must deal damage, and it must make a spell attack or require a saving
+            throw. You can cast it 2 times at level 5, 3 times at level 11, and 4 times at level 17. If you do, the cantrip can deal its damage more than once, but its other effects aren't applied to the same target again.</p>
+            <ul class="indent">
+                <li><strong>Sniper Form:</strong> The range of your ranged spell attack rolls cast through the hex gun are doubled. While wielding this weapon, you know the <em>ray of frost</em> cantrip.</li>
+                <li><strong>Reveolver Form:</strong> Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon you know the
+                <em>shocking grasp</em> cantrip.</li>
+            </ul>    
+		</description>
+		<sheet usage="Action">
+			<description>
+                <p>You can use your action to create a hex gun in your empty hand. You can choose the form that this ranged weapon takes each time you create it. It can be either a Sniper or a Revolver (detailed below).
+                This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+                <p class="indent">Your hex gun disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required),
+                or if you die.</p>
+                <p class="indent">You are proficient with your hex gun and you can channel cantrips through it as bullets, using it as an arcane focus. If you do so, instead of increasing the damage of the cantrip when
+                you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast), the cantrip must deal damage, and it must make a spell attack or require a saving
+                throw. You can cast it 2 times at level 5, 3 times at level 11, and 4 times at level 17. If you do, the cantrip can deal its damage more than once, but its other effects aren't applied to the same target again.</p>
+                <ul class="indent">
+                    <li><strong>Sniper Form:</strong> The range of your ranged spell attack rolls cast through the hex gun are doubled. While wielding this weapon, you know the <em>ray of frost</em> cantrip.</li>
+                    <li><strong>Reveolver Form:</strong> Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon you know the
+                    <em>shocking grasp</em> cantrip.</li>
+                </ul>
+            </description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" spellcasting="Warlock" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="Warlock" />
+		</rules>
+</element>
+
+</elements>
